@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.boxes{
+    display: grid;
+    grid-template-rows: repeat(3, 8vw);
+    grid-template-columns: repeat(3, 8vw);
+}
+
+.box{
+    font-family: "Poppins", sans-serif;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgb(208, 208, 208);
+}
+
+.gameAbout{
+    font-family: "Press Start 2P", system-ui;
+    padding: 15px 35px;
+}
+
+#reset{
+    height: 33px;
+    width: 140px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 2rem;
+    font-family: "Press Start 2P", system-ui;;
+}
+
+#reset:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.lb{
+    border-left: 0;
+}
+
+.tb{
+    border-top: 0;
+}
+
+.rb{
+    border-right: 0;
+}
+
+.bb{
+    border-bottom: 0;
+}
+
+nav{
+    font-family:  "Press Start 2P", system-ui;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+
+@media screen and (max-width: 950px)
+{
+    .container{
+        flex-wrap: wrap;
+    }
+    .gameAbout{
+        margin-top: 34px;
+    }
+    .boxes { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
